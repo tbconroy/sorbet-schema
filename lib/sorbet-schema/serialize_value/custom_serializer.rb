@@ -7,7 +7,7 @@ class SerializeValue
 
     abstract!
 
-    sig { abstract.returns(T::Types::Base) }
+    sig { abstract.returns(T::Class[T.anything]) }
     def type
     end
 
