@@ -21,6 +21,8 @@ loader.setup
 # but contains extensions, so we need to manually require it.
 require_relative "sorbet-schema/hash_transformer"
 require_relative "sorbet-schema/serialize_value"
+require_relative "sorbet-schema/serialize_value/custom_serializer"
+require_relative "sorbet-schema/serialize_value/custom_serializer_registry"
 
 # We want to add a default `schema` method to structs
 # that will guarentee a schema can be created for use
